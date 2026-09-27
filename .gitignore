@@ -1,0 +1,30 @@
+# Android / Gradle
+.gradle/
+**/build/
+local.properties
+.externalNativeBuild/
+.cxx/
+
+# Android Studio
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Logs e arquivos temporários
+*.log
+captures/
+.externalNativeBuild/
+
+# APKs gerados localmente (o APK de demonstração publicado fica em releases/)
+*.apk
+*.aab
+!releases/*.apk
+
+# Secrets
+.env
+.env.*

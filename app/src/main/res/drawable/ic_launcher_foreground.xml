@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Halo translúcido atrás da bandeira -->
+    <path
+        android:pathData="M54,20a34,34 0 1,0 0.01,0z"
+        android:fillColor="#1AFFFFFF" />
+
+    <!-- Mastro -->
+    <path
+        android:pathData="M50,28h4v58h-4z"
+        android:fillColor="#FFFFFF" />
+
+    <!-- Bolinha no topo do mastro -->
+    <path
+        android:pathData="M52,20a4,4 0 1,0 0.01,0z"
+        android:fillColor="#FFD600" />
+
+    <!-- Bandeira -->
+    <path android:pathData="M52,28L86,40L52,52Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:angle="0"
+                android:startColor="#FFD600"
+                android:centerColor="#FF6F00"
+                android:endColor="#E53935" />
+        </aapt:attr>
+    </path>
+
+</vector>
