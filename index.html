@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#07111f" />
+  <meta name="description" content="Versão web do Quiz das Bandeiras desenvolvido por José Cauan Ferreira da Silva." />
+  <title>Quiz das Bandeiras | José Cauan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Voltar ao início"><span class="brand-mark">◎</span><span>QUIZ<span class="brand-accent">.</span></span></a>
+    <div class="header-meta"><span class="status-dot"></span> versão web demonstrativa</div>
+  </header>
+
+  <main id="top" class="shell">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow">PROJETO ACADÊMICO · ANDROID + WEB</p>
+        <h1 id="page-title">O mundo inteiro<br /><em>em uma pergunta.</em></h1>
+        <p class="hero-text">Teste seus conhecimentos sobre bandeiras, acumule acertos e entre para o ranking desta sessão.</p>
+        <div class="hero-tags"><span>10 desafios</span><span>4 alternativas</span><span>ranking local</span></div>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="globe">🌎</div><span class="orbit orbit-a"></span><span class="orbit orbit-b"></span><span class="coordinate">LAT 23.55° S<br />LONG 46.63° W</span></div>
+    </section>
+
+    <section id="game" class="game-card" aria-live="polite">
+      <div class="progress-row"><span id="progress-label">PRONTO PARA JOGAR</span><span id="progress-count">0 / 10</span></div>
+      <div class="progress-track"><span id="progress-bar"></span></div>
+
+      <div id="start-screen" class="screen active">
+        <div class="screen-icon">✦</div>
+        <h2>Qual é o seu nome?</h2>
+        <p>Seu nome aparecerá no ranking local ao final da partida.</p>
+        <form id="start-form" class="start-form">
+          <label for="player-name">Nome do jogador</label>
+          <input id="player-name" type="text" maxlength="28" autocomplete="name" placeholder="Digite seu nome" required />
+          <button class="primary-button" type="submit">COMEÇAR DESAFIO <span>→</span></button>
+        </form>
+      </div>
+
+      <div id="question-screen" class="screen" hidden>
+        <div class="question-top"><div><p class="eyebrow">IDENTIFIQUE A BANDEIRA</p><h2 id="question-title">Que país é este?</h2></div><div class="question-number" id="question-number">01</div></div>
+        <div class="flag-frame"><img id="flag-image" src="assets/brasil.png" alt="Bandeira do país" /></div>
+        <div id="answers" class="answers"></div>
+        <button id="answer-button" class="primary-button answer-button" type="button" disabled>CONFIRMAR RESPOSTA <span>→</span></button>
+      </div>
+
+      <div id="result-screen" class="screen" hidden>
+        <div class="result-badge">✦</div><p class="eyebrow">DESAFIO CONCLUÍDO</p><h2 id="result-title">Muito bem!</h2><p class="result-score"><strong id="score-value">0</strong><span>/ 10 acertos</span></p><p id="result-message" class="result-message"></p>
+        <div class="result-actions"><button id="restart-button" class="primary-button" type="button">JOGAR NOVAMENTE <span>↻</span></button><button id="home-button" class="secondary-button" type="button">TROCAR JOGADOR</button></div>
+      </div>
+    </section>
+
+    <section class="ranking-section" aria-labelledby="ranking-title">
+      <div class="section-heading"><div><p class="eyebrow">HISTÓRICO DO NAVEGADOR</p><h2 id="ranking-title">Ranking da sessão</h2></div><button id="clear-ranking" class="text-button" type="button">Limpar histórico</button></div>
+      <div id="ranking-list" class="ranking-list"><div class="empty-ranking">Ainda não há resultados. Seja o primeiro a jogar.</div></div>
+    </section>
+
+    <section class="about-strip"><img src="assets/autor.jpg" alt="Imagem do autor do projeto" /><div><p class="eyebrow">SOBRE O PROJETO</p><p>Desenvolvido por <strong>José Cauan Ferreira da Silva</strong> em Java no Android Studio. Esta versão web foi criada para facilitar a visualização do projeto no portfólio.</p></div><a href="https://github.com/jcauan374-ads/Quiz-de-Bandeiras" target="_blank" rel="noreferrer">ver código no GitHub ↗</a></section>
+  </main>
+  <footer class="site-footer"><span>QUIZ DAS BANDEIRAS</span><span>© 2026 · José Cauan Ferreira da Silva</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
