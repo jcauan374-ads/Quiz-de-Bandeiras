@@ -106,6 +106,14 @@ app/src/main/
 
 > O arquivo `local.properties` não é versionado. O Android Studio cria essa configuração automaticamente para cada ambiente local.
 
+## 🌐 Versão web para visualização
+
+Também está disponível uma versão web responsiva para apresentar o projeto diretamente no navegador, sem instalação:
+
+**[Abrir o Quiz das Bandeiras no GitHub Pages ↗](https://jcauan374-ads.github.io/Quiz-de-Bandeiras/)**
+
+Ela mantém a proposta do aplicativo original e inclui perguntas interativas, resultado final, ranking salvo no `localStorage` e layout adaptado para celular e desktop.
+
 ## 📦 APK para testes
 
 Uma versão de demonstração está disponível na seção **Releases** do repositório. No Android, permita a instalação de aplicativos de fontes desconhecidas apenas quando necessário e instale o APK por sua conta e risco.
